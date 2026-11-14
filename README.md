@@ -1,23 +1,26 @@
 # Rwanda–DR Congo: Football Sponsorship and Media Representation
 
-**Version:** `v0.1.0` — discovery corpus, November 13, 2026. **Status: candidate inventory, not a completed or validated research dataset.**
+**Stage 1 v0.2 — expanded discovery register (13 November 2026).** This repository is an ongoing research project; **candidate discovery is not the same as an exhaustive or representative sample or a completed coded dataset.**
 
-## Scope
-Comparative government messaging surrounding European football sponsorships by Rwanda and the Democratic Republic of Congo. Rwanda documents run from 2018 to 2026 because the strategy predates the DRC deals; this unequal historical coverage is descriptive, **not a balanced inferential comparison**. South Africa 2010 is background literature, not a third empirical case.
+## Current holdings
+- **33 dated government-source candidates:** 25 Rwanda / 8 DRC in [government_source_register.csv](data/government_source_register.csv). Includes RDB publicity and Congolese Sports Ministry documents and cabinet proceedings.
+- **9 supplemental reference sources:** 5 Rwanda Development Board annual reports and 4 Congolese campaign, federation, or news-agency records kept **separate** with institutional provenance flags in [supplementary_official_reports_and_boundary_sources.csv](data/supplementary_official_reports_and_boundary_sources.csv). These are not 9 more verified government-issued observations.
+- No journalistic or club-authored corpus has been collected in this Stage 1 register. No discourse coding or reliability testing has yet been completed.
 
-## Contents
-- `data/government_source_register.csv`: 23 source records linked to government webpages; independently verify on-page dates, titles and relevance before analysis.
-- `methods/search_protocol.md`: discovery queries and screening protocol.
-- `methods/decisions.md`: decisions and known limitations.
-- `codebook/codebook_v0.1.md`: proposed categories, **not yet coded**.
-- `scripts/validate.py`: checks identifiers, date formatting, URL structure and duplicate URLs.
-- `data/claim_register_template.csv`: template to log quantitative or contested factual claims.
+## Interpretation safeguards
+- Discoveries have **not been systematically screened** against a complete source index. Source title, publication date, issuing institution and archived status must be independently checked before inclusion. Some entries were inspected in search-result excerpts, not fully archived.
+- **The 25-versus-8 discrepancy reflects different histories, source availability, and targeted search behavior—not comparative communication activity.**
+- For comparable analysis, use a common 2025–2026 window; earlier Rwandan sources and 2024 DRC cabinet deliberations contextualize policy development.
+- Government or club impact numbers are **source-attributed claims**, not causal evidence of public perception or verified tourism effects.
+- Reports and press releases are different document genres. A long annual report should not be weighted as a single press release in narrative-frequency counts without explicit rules.
+- Preserve French-language original material, mark translations, log exclusions and revisions. Treat the DRC campaign site and football federation as **separate institutional categories until provenance is established**.
+- The Rwanda Los Angeles sport-sponsorship item is a boundary candidate; it may be excluded from the Europe-football analytic sample.
+- Copyrighted full articles, photos, and other third-party content are not redistributed.
 
-## Reuse and ethical provenance
-Links, bibliographic metadata and researcher-generated notes only. **No copyrighted article full text, government documents, photos, or club media are redistributed**. Original-source claims are not independently verified merely by being recorded here. Researcher-created metadata/documentation intended for CC BY 4.0 on final review; code intended for MIT.
+## Methods and replication
+Read [search protocol](methods/search_protocol.md), [decision log](methods/decisions.md), [provisional codebook](codebook/codebook_v0.1.md), and [claim template](data/claim_register_template.csv). Validate with `python scripts/validate.py`.
 
-## Validation and openness
-Every record is a **candidate** pending systematic screening; none is a completed research coding observation. Targeted discovery cannot support representative or quantitative comparison between Rwanda and DRC, especially given unequal periods.
+## Research questions
+How do Rwanda and the DRC construct narratives through European football partnerships, and how are such narratives mediated or contested by European clubs and journalism? South Africa 2010 provides historical literature context, not a third empirical case.
 
-## Suggested citation
-Chala, Endalkachew H. (2026). *Rwanda–DR Congo European Football Sponsorship and Media Representation: Government Source Discovery Register (v0.1.0).* Working research dataset. DOI pending.
+**Data DOI:** Pending. Stable archival release should follow full screening, provenance auditing, and codebook testing.
