@@ -1,6 +1,8 @@
 # Provisional Codebook — Not Yet Coded
 
-**Unit:** a unique official government webpage. The 23 candidates have not undergone systematic eligibility screening or full-text coding.
+**Unit:** a unique official government webpage. The 39 government candidates in the [source register](../data/government_source_register.csv) have not undergone systematic eligibility screening or full-text coding.
+
+**Scope (updated 2026-11-19):** this codebook was drafted for corpus 1, government communications. It does not yet cover the 19 club communication records or the 71 press records (37 African, 34 international). A shared codebook for those corpora is planned; the measures proposed for the press are listed in the [international press protocol](../methods/international_press_visibility_protocol_v0.1.md).
 
 ## Proposed variables
 - `tourism_promotion` (0/1/unclear): tourism explicitly promoted.
