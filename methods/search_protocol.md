@@ -27,4 +27,6 @@ Duplicates, source-only image galleries, unrelated sports, generic tourism pages
 ## Verification and audit
 For each candidate: confirm title, institution, original date, original language, live URL, document type, access date and relevant passages; register retrieval errors, archive snapshots, duplicate relationships, and inclusion rationale. Attribute each outcome statistic to its speaker/source and check its denominator and measurement method. Record original-language evidence and translation decisions.
 
-**Current status:** 33 dated government candidates + 9 separately labeled supplementary references. Search not exhaustive; no complete denominator, finalized sample, or inter-coder reliability established.
+**Current status (updated 2026-11-19):** 39 dated government candidates (30 Rwanda, 9 DR Congo) + 9 separately labeled supplementary references. 22 of the 39 have had page content inspected; 17 await an independent page-level check. Search not exhaustive; no complete denominator, finalized sample, or inter-coder reliability established.
+
+**Scope of this protocol:** corpus 1, government communications, only. Club communications are recorded in the [club register](../data/club_communications_discovery_v0.1.csv). The press corpus is documented in the [African journalism collection notes](african_journalism_collection_notes_v0.1.md) and the [international press protocol](international_press_visibility_protocol_v0.1.md).

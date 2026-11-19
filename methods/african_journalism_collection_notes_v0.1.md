@@ -1,7 +1,7 @@
 # African journalism discovery audit — v0.1 (2026-11-18)
 
 ## Scope and relationship to the project
-This register is the **African-origin subset of the third corpus (journalistic coverage)**. It does **not** create a fourth corpus. The first two corpora remain (1) Rwanda and DR Congo government communication and (2) European football-club communication. The overall journalism corpus also requires a separate European-press stratum.
+This register is the **African-origin subset of the third corpus (journalistic coverage)**. It does **not** create a fourth corpus. The first two corpora remain (1) Rwanda and DR Congo government communication and (2) European football-club communication. The journalism corpus also has an international-press stratum (Europe and the United States), added on 2026-11-18: [34 candidate records](../data/international_journalism_discovery_v0.1.csv), documented in the [international press protocol](international_press_visibility_protocol_v0.1.md).
 
 - Data: [37 candidate records](../data/african_journalistic_coverage_discovery_v0.1.csv)
 - Geography, based on publication outlet: Rwanda (8), DR Congo (15), and other African / pan-African outlets (14).
@@ -33,14 +33,14 @@ Purposeful web-domain searches of The New Times, Actualite.cd, 7SUR7.CD, Radio O
 7. **Ownership and independence**: confirm outlets' location, publisher, byline, and actual reporting source. Avoid automatically describing a publication as independent.
 8. **AC Milan gap**: The DRC source material reports AC Milan involvement. Existing club-communication discovery includes Monaco and Barcelona; search for Milan's own original club announcement before event comparison.
 9. **Aston Villa gap**: A 2026 Rwanda sponsorship story surfaced. Verify date and revise the six-club boundary consistently or treat as documented out-of-scope material.
-10. **European journalism remains**: An African-only register does not satisfy the proposal's European-press component.
+10. **International journalism (updated 2026-11-19)**: An African-only register does not satisfy the proposal's European-press component. A discovery register for the international press now exists (34 candidates: UK 10, France 10, USA 6, Italy 4, Germany 3, Spain 1). It is unverified and uncoded, and it has not yet been matched event by event against this register.
 
 ## Pending work before 'collection complete' can be claimed
 - Independently open each candidate URL and verify exact title, date, journalist/byline, source agency, genre, country of original production, and relevance.
 - Deduplicate aliases, mirrored pages, translations, syndicated newswire versions, and updates; preserve one master record with secondary publication links.
 - Screen within predeclared event windows and scope. Record exclusion reasons; avoid adjusting sample solely to balance case numbers.
 - Search missing reporting by Congolese, Rwandan, and regional outlets with multilingual synonyms and event-specific dates. Log positive and negative searches.
-- Build matching European-press register against the same event list. Check original club reports for AC Milan (and Aston Villa if included).
+- Match the international-press register (started 2026-11-18) against the same event list, and align event keys across the two press registers. Check original club reports for AC Milan (and Aston Villa if included).
 - Freeze a versioned screened sample, then pilot code and test reliability before treating narrative patterns as findings.
 
 ## Preliminary patterns: interpret as hypotheses only
