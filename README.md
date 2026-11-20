@@ -96,7 +96,7 @@ Supporting files:
 - [African journalism collection notes](methods/african_journalism_collection_notes_v0.1.md)
 - [International press visibility and sampling protocol](methods/international_press_visibility_protocol_v0.1.md)
 - [Decision log](methods/decisions.md)
-- [Codebook v0.2](codebook/codebook_v0.2.md): draft covering all three corpora, not yet piloted. It replaces the [government-only v0.1](codebook/codebook_v0.1.md).
+- [Codebook v0.3](codebook/codebook_v0.3.md): covers all three corpora; revised after a ten-document pilot on 2026-11-19. Its press variables are not yet piloted. Earlier versions: [v0.2](codebook/codebook_v0.2.md), [v0.1](codebook/codebook_v0.1.md).
 - Research reflections: [November 17](notes/research_reflection_2026-11-17.md) and [November 18](notes/research_reflection_2026-11-18.md). These record emerging questions, not coded findings.
 
 ## Validation
