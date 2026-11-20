@@ -97,7 +97,7 @@ Supporting files:
 - [International press visibility and sampling protocol](methods/international_press_visibility_protocol_v0.1.md)
 - [Decision log](methods/decisions.md)
 - [Codebook v0.3.1](codebook/codebook_v0.3.1.md): covers all three corpora; revised after a ten-document pilot on 2026-11-19 and amended twice during coding. Its press variables are not yet piloted. Earlier versions: [v0.3](codebook/codebook_v0.3.md), [v0.2](codebook/codebook_v0.2.md), [v0.1](codebook/codebook_v0.1.md).
-- Coding of the 58 government and club documents: [pilot, 10 documents](data/coding_pilot_v0.3.1.csv) and [remaining 48 documents](data/coding_government_club_v0.3.1.csv). Codes were proposed by an AI assistant and reviewed document by document by the researcher. This is single-coder work, not independent double coding, and three codes are still provisional (see the decision log). In the pilot file, the `final_` columns hold the researcher's changes to two codes.
+- Coding of the 58 government and club documents: [pilot, 10 documents](data/coding_pilot_v0.3.1.csv) and [remaining 48 documents](data/coding_government_club_v0.3.1.csv). Codes were proposed by an AI assistant and reviewed document by document by the researcher. This is single-coder work, not independent double coding, and one code is still provisional (see the decision log). In the pilot file, the `final_` columns hold the researcher's changes to two codes.
 - Research reflections: [November 17](notes/research_reflection_2026-11-17.md) and [November 18](notes/research_reflection_2026-11-18.md). These record emerging questions, not coded findings.
 
 ## Validation
