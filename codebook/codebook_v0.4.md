@@ -1,6 +1,6 @@
 # Codebook v0.4
 
-**Status:** proposed on 2026-11-20 after a pilot of the press variables on twelve news items. Awaiting the researcher's review. Changes from v0.3.1 are listed in section 14. Three variables are new for all corpora, so the 58 government and club documents coded under v0.3.1 need those three variables added before the corpora are compared.
+**Status:** adopted on 2026-11-20. Drafted after a pilot of the press variables on twelve news items; the researcher reviewed the twelve pilot codes item by item and accepted them and this version. Changes from v0.3.1 are listed in section 14. Three variables are new for all corpora, so the 58 government and club documents coded under v0.3.1 need those three variables added before the corpora are compared.
 **Replaces:** [codebook_v0.3.1.md](codebook_v0.3.1.md).
 **Covers:** all three corpora: government communications, European club communications, and journalism (African and international press).
 
@@ -193,7 +193,7 @@ Use `not_applicable` for both when `claimed_outcome` is 0. Log each specific fig
 
 Code 1 for each type of source that is quoted, or paraphrased with attribution.
 
-`voice_government_rwa`, `voice_government_drc`, `voice_club`, `voice_football_body`, `voice_fans_supporters`, `voice_civil_society`, `voice_international_body` (United Nations and similar), `voice_expert_academic`, `voice_opposition_or_parliament`, `voice_business` (new: investors, company founders, sponsors other than the club), `voice_citizens`, `voice_other_media`, `voice_judicial_legal` (new in v0.4: prosecutors, courts, and lawyers acting in a legal action about the partnership).
+`voice_government_rwa`, `voice_government_drc`, `voice_club`, `voice_football_body`, `voice_fans_supporters`, `voice_civil_society`, `voice_international_body` (United Nations and similar), `voice_expert_academic`, `voice_opposition_or_parliament`, `voice_business` (new: investors, company founders, sponsors other than the club), `voice_citizens`, `voice_other_media`, `voice_judicial_legal` (new in v0.4: prosecutors, courts, and lawyers acting in a legal action about the partnership), `voice_other_government` (added 2026-11-20 during press coding: a government other than Rwanda's or DR Congo's, or one of its ministers or officials, for example a British foreign minister or the Italian government).
 
 Rules:
 
@@ -298,7 +298,7 @@ These variables were piloted on twelve news items on 2026-11-20. The pilot cases
 | Politics | `political_contact` | head_of_state_or_government / minister / senior_official / none |
 | Other case | `other_case_mentioned` | 0 / 1 |
 | Outcomes | `claimed_outcome`, `outcome_claimed_by`, `independent_evidence_in_document` | see 5.9 |
-| Voices | thirteen voice variables | 0 / 1 |
+| Voices | fourteen voice variables | 0 / 1 |
 | Government and club | `document_function`, three club response variables | see 6 |
 | Press | `origin`, `genre`, `narrative_uptake`, `stance`, `sportswashing_term`, three club response variables | see 7 |
 
@@ -345,3 +345,12 @@ These variables were piloted on twelve news items on 2026-11-20. The pilot cases
 | A party that declined to comment, and a former minister, had no voice rule. | Rules 4 and 5 under voices (5.10). | INTPRESS-036 (club declined to comment); NEWS-040 (a former sports minister). |
 
 Not changed: hostility between the two states named without reference to armed conflict stays 0 on `conflict_link` (INTPRESS-046, "ennemi juré"), in line with the decision on CLUB-002.
+
+## 15. Amendments made during press coding
+
+| Date | Problem | Change | Case |
+|---|---|---|---|
+| 2026-11-20 | A third state's government was quoted and had no voice code. | New `voice_other_government` (5.10). It applies to all corpora, so it joins the three variables to be added to the 58 government and club documents. | NEWS-031 and NEWS-033: a British foreign minister on aid to Rwanda. |
+| 2026-11-20 | Twelve press items could be read only in part, behind subscription or registration walls. | They are coded in a separate file, `data/coding_press_partial_v0.4.csv`. Only what the visible part positively shows is coded. A variable the visible part cannot settle is `not_established`, never 0, because absence from an extract is not absence from the article. Partial items are reported separately and are not included in counts or shares for the fully read corpus. | INTPRESS-017: headline, standfirst and one paragraph of a four-minute article. |
+
+Noted and not changed: a club that says it is reviewing or monitoring the partnership gives a response that is neither defence, separation, nor change. It is coded 0 on all three club response variables and described in `coder_note` (NEWS-027).
