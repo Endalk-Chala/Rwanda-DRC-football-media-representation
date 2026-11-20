@@ -25,15 +25,15 @@ Commercial arrangements and political economy are analytic dimensions across the
 | Corpus | File | Candidate records | Breakdown | Collected |
 |---|---|---|---|---|
 | 1. Government | [government_source_register.csv](data/government_source_register.csv) | 39 | Rwanda 30, DR Congo 9 | 2026-11-13 |
-| 2. Clubs | [club_communications_discovery_v0.1.csv](data/club_communications_discovery_v0.1.csv) | 19 | Rwanda partners 14, DR Congo partners 5 | 2026-11-17 |
+| 2. Clubs | [club_communications_discovery_v0.1.csv](data/club_communications_discovery_v0.1.csv) | 20 | Rwanda partners 15, DR Congo partners 5 | 2026-11-17, revised 2026-11-19 |
 | 3a. African press | [african_journalistic_coverage_discovery_v0.1.csv](data/african_journalistic_coverage_discovery_v0.1.csv) | 37 | Rwanda-based 8, DR Congo-based 15, other African and pan-African 14 | 2026-11-18 |
 | 3b. International press | [international_journalism_discovery_v0.1.csv](data/international_journalism_discovery_v0.1.csv) | 34 | UK 10, France 10, USA 6, Italy 4, Germany 3, Spain 1 | 2026-11-18 |
-| **Total** | | **129** | | |
+| **Total** | | **130** | | |
 
 Supporting files:
 
 - [verification_audit_v0.3.csv](data/verification_audit_v0.3.csv): page-level audit of 22 government records (2026-11-13).
-- [communication_verification_2026-11-19.csv](data/communication_verification_2026-11-19.csv): page-level check of all 58 communication records (39 government, 19 club) against the registers, one row per record, with flags, notes, and the corrections applied. Fifty pages were read automatically and eight by hand.
+- [communication_verification_2026-11-19.csv](data/communication_verification_2026-11-19.csv): page-level check of all 59 communication records (39 government, 20 club) against the registers, one row per record, with notes and the corrections applied. Forty-four pages were read automatically; fifteen were checked by the researcher from the page text or in a browser.
 - [supplementary_official_reports_and_boundary_sources.csv](data/supplementary_official_reports_and_boundary_sources.csv): 9 resources kept apart from the corpora (5 Rwanda Development Board annual reports, 2 campaign-website items, 1 football federation statement, 1 state news agency item). These are not coded observations.
 - [claim_register_template.csv](data/claim_register_template.csv): an empty template for logging and checking reported claims such as reach, spending, and tourism figures.
 
@@ -42,17 +42,17 @@ Supporting files:
 - 39 candidate records, dated 2018-05-23 to 2026-05-08, in English (29) and French (10). They cover 38 distinct documents: GOV-RWA-030 is the French-language version of GOV-RWA-007 and is counted once.
 - Sources are official domains, mainly `rdb.rw` and `sports.gouv.cd`.
 - Partner clubs named: Arsenal, Paris Saint-Germain, Bayern Munich, Atlético de Madrid, AS Monaco, FC Barcelona, and AC Milan.
-- All 39 pages were checked on 2026-11-19 for date, headline, language, and whether the partnership is described. The publication date agrees with the register for 36; one date was corrected (GOV-RWA-023), and two pages show no date that could be confirmed (GOV-RWA-001, GOV-RWA-007).
-- Four records name a club without describing the partnership and need a relevance decision: GOV-RWA-011, GOV-RWA-018, GOV-RWA-023, and GOV-RWA-025.
+- All 39 pages were checked on 2026-11-19 for date, headline, language, and whether the partnership is described. All 39 dates are now confirmed: one was corrected (GOV-RWA-023), and GOV-RWA-007, whose page shows no date, is dated through its French-language version. The headline of GOV-RWA-001 is an image on the page and could not be checked as text.
+- Four records name or use a partner club without describing the partnership in full: GOV-RWA-011, GOV-RWA-018, GOV-RWA-023, and GOV-RWA-025. They are kept in the corpus and will be coded under the `implicit` and `passing` rules of codebook v0.2.
 - The `source_review_status` field still records the 2026-11-13 audit (22 inspected, 17 pending). The 2026-11-19 results are in the verification file until screening decisions are made.
 
 ### Corpus 2: European club communications
 
-- 19 candidate records from six clubs: FC Bayern (5), Paris Saint-Germain (4), Atlético de Madrid (3), AS Monaco (3), Arsenal (2), and FC Barcelona (2).
-- Dated records run from 2023-08-27 to 2026-09-07. Four records have no date in the register: CLUB-006, CLUB-009, CLUB-014, and the undated partner page CLUB-016. Three more carry register dates that the page itself does not show (CLUB-008, CLUB-011, CLUB-013).
-- All 19 pages were checked on 2026-11-19. Dates were added to CLUB-001 and CLUB-002, which had none; the CLUB-002 date is a meeting date, not a publication date.
+- 20 candidate records from six clubs: FC Bayern (5), Paris Saint-Germain (4), Arsenal (3), Atlético de Madrid (3), AS Monaco (3), and FC Barcelona (2).
+- Dated records run from 2020-01-04 to 2026-09-29. Eighteen dates are shown on the page. One is inferred (CLUB-006, a statement with no printed date, dated from its own text and page metadata), and one record is an undated partner page (CLUB-016).
+- All 20 pages were checked on 2026-11-19. The CLUB-002 date is a meeting date, not a publication date. CLUB-001, which pointed to an undated landing page, was split into the two dated articles that page links to (CLUB-001 and CLUB-020). Two Atlético de Madrid addresses that had begun redirecting to the club homepage were replaced with working ones.
 - Genres include press releases, club news, statements, partner pages, a fans' forum document, a video, and a photo gallery. The video is not transcribed and the images are not coded.
-- 13 records are core candidates; the other 6 are contextual or companion material.
+- 13 records are core candidates; the other 7 are contextual or companion material.
 - No AC Milan club communication has been located yet.
 
 ### Corpus 3a: African press
@@ -103,7 +103,7 @@ Supporting files:
 
 Run `python scripts/validate.py` to check field structure in every register: unique IDs and URLs, HTTPS links, date formats, allowed codes, agreement between the government register and its audit file, and URLs repeated across registers. It reports errors, which must be fixed, and warnings, which need a decision. The script does not open any URL, and it does not test whether sources are valid, live, or complete.
 
-As of 2026-11-19 it reports no errors and six warnings: five paired-record references in the club register that use an ID format (`RWA-CLUB-004`) different from the file's record IDs (`CLUB-004`), and the post-cutoff date of INTPRESS-032. It also lists 18 event keys that appear in only one of the two press registers, which will need aligning before event-matched comparison, and 15 of the 58 communication records that still carry an open verification flag.
+As of 2026-11-19 it reports no errors and six warnings: five paired-record references in the club register that use an ID format (`RWA-CLUB-004`) different from the file's record IDs (`CLUB-004`), and the post-cutoff date of INTPRESS-032. It also lists 18 event keys that appear in only one of the two press registers, which will need aligning before event-matched comparison, and reports that none of the 59 communication records carries an open verification flag.
 
 ## Next steps
 
