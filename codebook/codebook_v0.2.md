@@ -23,9 +23,13 @@ One unit is one distinct document: a government web page or official minute, a c
 Code a document only if it meets both conditions:
 
 1. It was published between 2018-01-01 and 2026-11-13.
-2. It refers to a partnership, sponsorship, or cooperation between Rwanda or DR Congo (the state, a state agency, or the national tourism brand) and a European football club.
+2. It does one of the following:
+   - it refers to a partnership, sponsorship, or cooperation between Rwanda or DR Congo (the state, a state agency, or the national tourism brand) and a European football club; or
+   - it is a government or club document that uses a partner club, its current or former players, its staff, its stadium, or its supporters to present the country, even if the partnership is not named.
 
-A document that names a club without referring to the partnership is not eligible. Record it as `excluded_no_partnership_reference` in the screening column and do not code it.
+The second route was added on 2026-11-19. A state agency that stages an event at a partner club's stadium, or brings a former player to a tourism roadshow, is using the relationship whether or not the text names it, and leaving such documents out would hide that use. These documents are coded `implicit` on centrality (section 5.1).
+
+A news item that names a club without referring to the partnership is not eligible. Record it as `excluded_no_partnership_reference` in the screening column and do not code it.
 
 ## 4. Identification fields (copied from the registers, not coded)
 
@@ -42,8 +46,11 @@ A document that names a club without referring to the partnership is not eligibl
 | central | The partnership is the main subject of the headline or the opening paragraph. |
 | secondary | The partnership is discussed in at least one full paragraph but is not the main subject. |
 | passing | The partnership appears in a sentence, a list, a caption, or a logo reference only. |
+| implicit | Government and club documents only. The partnership is not named, but the document uses a partner club, its players or former players, its staff, its stadium, or its supporters to present the country. |
 
 Documents coded `passing` receive the identification fields, centrality, and `scale_of_reference` only. The remaining variables are left blank.
+
+Documents coded `implicit` receive all variables. In `evidence_note`, state how the club appears (for example: event held at the stadium, former player as guest).
 
 ### 5.2 Themes present
 
@@ -168,6 +175,7 @@ Rules for `narrative_uptake`:
 
 - Extended from government documents to all three corpora.
 - Added eligibility and centrality rules, so passing mentions are not coded as if they were statements about the partnership.
+- Amended 2026-11-19: government and club documents that use a partner club to present the country without naming the partnership are eligible and coded `implicit`.
 - Split `conflict_accountability` into `conflict_link` and `accountability_scrutiny`.
 - Added `scale_of_reference`, `initiative_attributed_to`, `other_case_mentioned`, the voice variables, and the press variables.
 - Added decision rules for each variable and a single-coder consistency check.
