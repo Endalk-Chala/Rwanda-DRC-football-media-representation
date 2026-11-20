@@ -140,9 +140,9 @@ for r in club:
     rid = r["record_id"]
     check_url(CLUB, rid, r["source_url"])
     check_code(CLUB, rid, "country", r["country"], {"RWA", "DRC"})
-    check_code(CLUB, rid, "date_precision", r["date_precision"], {"day", "undated", "date_check"})
+    check_code(CLUB, rid, "date_precision", r["date_precision"], {"day", "inferred_day", "undated", "date_check"})
     check_code(CLUB, rid, "relation_to_partnership", r["relation_to_partnership"], {"direct", "incidental"})
-    if r["date_precision"] == "day":
+    if r["date_precision"] in ("day", "inferred_day"):
         check_date(CLUB, rid, r["publication_date"])
     elif r["publication_date"].strip():
         check_date(CLUB, rid, r["publication_date"], allow_partial=True)
