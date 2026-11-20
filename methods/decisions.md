@@ -19,3 +19,8 @@
 - **2026-11-19:** Dates added to two club records that were undated: CLUB-001 (2024-11-19, the date of the "Visit Rwanda Trip 2024" item) and CLUB-002 (2023-11-02, a meeting date, not a publication date).
 - **2026-11-19:** Shortened register titles replaced with the full page headline for GOV-RWA-010, CLUB-013, and CLUB-017.
 - **2026-11-19:** Six club pages show no publication date (CLUB-006, 008, 009, 011, 013, 014). Their register dates come from news indexes, search results, or a language variant and remain unconfirmed.
+- **2026-11-19:** Club pages with unresolved dates were opened in a browser. Dates confirmed on the page for CLUB-008, CLUB-011, and CLUB-013; dates added for CLUB-009 (2025-09-06) and CLUB-014 (2026-09-29). CLUB-006 shows no date and is recorded as `inferred_day` 2025-08-09, from its own text and page metadata.
+- **2026-11-19:** CLUB-001 pointed to Arsenal's undated Commercial Partners landing page. It was split into the two dated articles the page links to: CLUB-001 (2024-11-19) and the new CLUB-020 (2020-01-04). The club corpus holds 20 records.
+- **2026-11-19:** The addresses of CLUB-008 and CLUB-009 on `en.atleticodemadrid.com` redirected to the club homepage and were replaced with the working addresses on the `www` host. Link rot in club sources should be expected; record the date an address was last seen working.
+- **2026-11-19:** GOV-RWA-011, GOV-RWA-018, GOV-RWA-023, and GOV-RWA-025 are kept in the corpus. Codebook v0.2 was amended so that a government or club document that uses a partner club to present the country, without naming the partnership, is eligible and coded `implicit`.
+- **2026-11-19:** GOV-RWA-007 shows no date on its page; its date is taken from its French-language version, GOV-RWA-030 (2023-05-10).
