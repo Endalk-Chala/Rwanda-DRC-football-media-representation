@@ -43,7 +43,7 @@ Supporting files:
 - Sources are official domains, mainly `rdb.rw` and `sports.gouv.cd`.
 - Partner clubs named: Arsenal, Paris Saint-Germain, Bayern Munich, Atlético de Madrid, AS Monaco, FC Barcelona, and AC Milan.
 - All 39 pages were checked on 2026-11-19 for date, headline, language, and whether the partnership is described. All 39 dates are now confirmed: one was corrected (GOV-RWA-023), and GOV-RWA-007, whose page shows no date, is dated through its French-language version. The headline of GOV-RWA-001 is an image on the page and could not be checked as text.
-- Four records name or use a partner club without describing the partnership in full: GOV-RWA-011, GOV-RWA-018, GOV-RWA-023, and GOV-RWA-025. They are kept in the corpus and will be coded under the `implicit` and `passing` rules of codebook v0.2.
+- Four records name or use a partner club without describing the partnership in full: GOV-RWA-011, GOV-RWA-018, GOV-RWA-023, and GOV-RWA-025. They are kept in the corpus and coded under the `implicit` rule of the codebook.
 - The `source_review_status` field still records the 2026-11-13 audit (22 inspected, 17 pending). The 2026-11-19 results are in the verification file until screening decisions are made.
 
 ### Corpus 2: European club communications
@@ -96,7 +96,8 @@ Supporting files:
 - [African journalism collection notes](methods/african_journalism_collection_notes_v0.1.md)
 - [International press visibility and sampling protocol](methods/international_press_visibility_protocol_v0.1.md)
 - [Decision log](methods/decisions.md)
-- [Codebook v0.3](codebook/codebook_v0.3.md): covers all three corpora; revised after a ten-document pilot on 2026-11-19. Its press variables are not yet piloted. Earlier versions: [v0.2](codebook/codebook_v0.2.md), [v0.1](codebook/codebook_v0.1.md).
+- [Codebook v0.3.1](codebook/codebook_v0.3.1.md): covers all three corpora; revised after a ten-document pilot on 2026-11-19 and amended twice during coding. Its press variables are not yet piloted. Earlier versions: [v0.3](codebook/codebook_v0.3.md), [v0.2](codebook/codebook_v0.2.md), [v0.1](codebook/codebook_v0.1.md).
+- Coding of the 58 government and club documents: [pilot, 10 documents](data/coding_pilot_v0.3.1.csv) and [remaining 48 documents](data/coding_government_club_v0.3.1.csv). Codes were proposed by an AI assistant and reviewed document by document by the researcher. This is single-coder work, not independent double coding, and three codes are still provisional (see the decision log). In the pilot file, the `final_` columns hold the researcher's changes to two codes.
 - Research reflections: [November 17](notes/research_reflection_2026-11-17.md) and [November 18](notes/research_reflection_2026-11-18.md). These record emerging questions, not coded findings.
 
 ## Validation
