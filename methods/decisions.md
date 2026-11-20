@@ -13,3 +13,9 @@
 - Claimed reach, engagement, survey effects and tourism outcomes must be attributed to the issuing institution and, where feasible, independently checked.
 - Source inspection does not establish independent verification of substantive claims, complete screening, or intercoder reliability.
 - Copyrighted third-party full-text stories and media assets are excluded from public redistribution.
+- **2026-11-19:** All 58 communication records (39 government, 19 club) received a page-level check of date, headline, language, and whether the partnership is described in the text. Fifty pages were read automatically and eight by hand. Results are in `data/communication_verification_2026-11-19.csv`. This is a check of register metadata, not screening or coding.
+- **2026-11-19:** GOV-RWA-023 publication date corrected from 2022-11-07 to 2022-11-08, the date shown on the page.
+- **2026-11-19:** GOV-RWA-030 confirmed as the French-language version of GOV-RWA-007 and marked `language_variant_of_GOV-RWA-007_count_once`. The government corpus holds 39 records and 38 distinct documents.
+- **2026-11-19:** Dates added to two club records that were undated: CLUB-001 (2024-11-19, the date of the "Visit Rwanda Trip 2024" item) and CLUB-002 (2023-11-02, a meeting date, not a publication date).
+- **2026-11-19:** Shortened register titles replaced with the full page headline for GOV-RWA-010, CLUB-013, and CLUB-017.
+- **2026-11-19:** Six club pages show no publication date (CLUB-006, 008, 009, 011, 013, 014). Their register dates come from news indexes, search results, or a language variant and remain unconfirmed.
