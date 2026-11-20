@@ -24,11 +24,13 @@ Commercial arrangements and political economy are analytic dimensions across the
 
 | Corpus | File | Candidate records | Breakdown | Collected |
 |---|---|---|---|---|
-| 1. Government | [government_source_register.csv](data/government_source_register.csv) | 39 | Rwanda 30, DR Congo 9 | 2026-11-13 |
-| 2. Clubs | [club_communications_discovery_v0.1.csv](data/club_communications_discovery_v0.1.csv) | 20 | Rwanda partners 15, DR Congo partners 5 | 2026-11-17, revised 2026-11-19 |
-| 3a. African press | [african_journalistic_coverage_discovery_v0.1.csv](data/african_journalistic_coverage_discovery_v0.1.csv) | 37 | Rwanda-based 8, DR Congo-based 15, other African and pan-African 14 | 2026-11-18 |
-| 3b. International press | [international_journalism_discovery_v0.1.csv](data/international_journalism_discovery_v0.1.csv) | 34 | UK 10, France 10, USA 6, Italy 4, Germany 3, Spain 1 | 2026-11-18 |
-| **Total** | | **130** | | |
+| 1. Government | [government_source_register.csv](data/government_source_register.csv) | 40 | Rwanda 31, DR Congo 9 | 2026-11-13 |
+| 2. Clubs | [club_communications_discovery_v0.1.csv](data/club_communications_discovery_v0.1.csv) | 22 | Rwanda partners 16, DR Congo partners 6 | 2026-11-17, revised 2026-11-19 |
+| 3a. African press | [african_journalistic_coverage_discovery_v0.1.csv](data/african_journalistic_coverage_discovery_v0.1.csv) | 39 | Rwanda-based 8, DR Congo-based 15, other African and pan-African 14 | 2026-11-18 |
+| 3b. International press | [international_journalism_discovery_v0.1.csv](data/international_journalism_discovery_v0.1.csv) | 39 | UK 10, France 10, USA 6, Italy 4, Germany 3, Spain 1 | 2026-11-18 |
+| **Total** | | **140** | | |
+
+> **Update, 2026-11-20.** Ten candidate records were added on this date and are not yet verified: one government, two club, two African press and five international press records. They include AC Milan's own announcement, the Aston Villa partnership of July 2026, two Reuters originals, and reporting on a judicial inquiry into the AS Monaco contract. The table above counts them; the corpus descriptions below were written before they were added and describe the 130 records checked so far. All 71 press records present before this date have been checked against their pages: see [press_verification_2026-11-20.csv](data/press_verification_2026-11-20.csv), which holds metadata and notes only. Eleven international items are behind access walls and were checked on headline and date alone. Leads without a usable link are in [discovery_additions_2026-11-20.csv](data/discovery_additions_2026-11-20.csv).
 
 Supporting files:
 
