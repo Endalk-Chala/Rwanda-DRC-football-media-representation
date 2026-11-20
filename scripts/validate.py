@@ -175,9 +175,21 @@ for r in intl:
     check_url(INT, rid, r["source_url"])
     check_date(INT, rid, r["publication_date"], allow_partial=True)
     check_code(INT, rid, "case_focus", r["case_focus"], {"RWA", "DRC", "BOTH"})
-    check_code(INT, rid, "press_region", r["press_region"], {"UK", "France", "Italy", "Germany", "Spain", "USA"})
+    check_code(INT, rid, "press_region", r["press_region"], {"UK", "France", "Italy", "Germany", "Spain", "USA", "Monaco", "Agency"})
     check_code(INT, rid, "genre_coding", r["genre_coding"], {"not_coded"})
     check_code(INT, rid, "frame_coding", r["frame_coding"], {"not_coded"})
+
+# Page-level check of the two press registers
+PVER = "press_verification_2026-11-20.csv"
+pver = load(PVER)
+check_unique(PVER, pver, "record_id")
+press_ids = {r["record_id"] for r in afr} | {r["record_id"] for r in intl}
+for r in pver:
+    if r["record_id"] not in press_ids:
+        errors.append(f"{PVER}: {r['record_id']} is not in either press register")
+    if r["verified_date"]:
+        check_date(PVER, r["record_id"], r["verified_date"])
+press_unverified = sorted(press_ids - {r["record_id"] for r in pver})
 
 # Supplementary reports and boundary sources
 SUP = "supplementary_official_reports_and_boundary_sources.csv"
@@ -233,11 +245,12 @@ print("Records checked:")
 for label, rows in [
     ("government", gov), ("government audit", audit), ("club", club),
     ("African press", afr), ("international press", intl), ("supplementary", sup),
-    ("communication verification", ver),
+    ("communication verification", ver), ("press verification", pver),
 ]:
     print(f"  {label}: {len(rows)}")
 print(f"  corpus total (government + club + press): {len(gov) + len(club) + len(afr) + len(intl)}")
 print(f"\nCommunication records with an open verification flag: {open_flags} of {len(ver)}")
+print(f"Press records not yet in the press verification file: {len(press_unverified)}")
 print(f"\nEvent keys used in only one of the two press registers: {len(press_only)}")
 for key in press_only:
     print(f"  {key}")
