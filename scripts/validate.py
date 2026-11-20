@@ -190,6 +190,28 @@ for r in sup:
     if not re.fullmatch(r"\d{4}", r["report_year_or_event_year"]):
         errors.append(f"{SUP}: {r['document_id']} year is not YYYY")
 
+# Page-level check of the two communication corpora
+VER = "communication_verification_2026-11-19.csv"
+ver = load(VER)
+check_unique(VER, ver, "record_id")
+expected_ids = {r["record_id"] for r in gov} | {r["record_id"] for r in club}
+ver_ids = {r["record_id"] for r in ver}
+if ver_ids != expected_ids:
+    errors.append(
+        f"{VER}: records do not match the government and club registers "
+        f"(missing: {sorted(expected_ids - ver_ids)}; extra: {sorted(ver_ids - expected_ids)})"
+    )
+register_dates = {r["record_id"]: r["publication_date"] for r in gov + club}
+for r in ver:
+    rid = r["record_id"]
+    check_code(VER, rid, "page_read", r["page_read"], {"yes", "no"})
+    if r["date_on_page"] and r["date_on_page"] != register_dates.get(rid):
+        errors.append(
+            f"{VER}: {rid} date on page {r['date_on_page']} differs from "
+            f"register date {register_dates.get(rid)!r}"
+        )
+open_flags = sum(1 for r in ver if r["flag"].strip())
+
 # The same URL should not sit in two registers
 seen_urls = {}
 for name, rows, id_field in [
@@ -211,9 +233,11 @@ print("Records checked:")
 for label, rows in [
     ("government", gov), ("government audit", audit), ("club", club),
     ("African press", afr), ("international press", intl), ("supplementary", sup),
+    ("communication verification", ver),
 ]:
     print(f"  {label}: {len(rows)}")
 print(f"  corpus total (government + club + press): {len(gov) + len(club) + len(afr) + len(intl)}")
+print(f"\nCommunication records with an open verification flag: {open_flags} of {len(ver)}")
 print(f"\nEvent keys used in only one of the two press registers: {len(press_only)}")
 for key in press_only:
     print(f"  {key}")
