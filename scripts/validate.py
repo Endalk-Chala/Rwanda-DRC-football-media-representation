@@ -175,7 +175,7 @@ for r in intl:
     check_url(INT, rid, r["source_url"])
     check_date(INT, rid, r["publication_date"], allow_partial=True)
     check_code(INT, rid, "case_focus", r["case_focus"], {"RWA", "DRC", "BOTH"})
-    check_code(INT, rid, "press_region", r["press_region"], {"UK", "France", "Italy", "Germany", "Spain", "USA", "Monaco", "Agency"})
+    check_code(INT, rid, "press_region", r["press_region"], {"UK", "France", "Italy", "Germany", "Spain", "USA", "Monaco", "Belgium", "Agency"})
     check_code(INT, rid, "genre_coding", r["genre_coding"], {"not_coded"})
     check_code(INT, rid, "frame_coding", r["frame_coding"], {"not_coded"})
 
